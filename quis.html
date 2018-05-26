@@ -15,12 +15,13 @@
         <a href="http://spiderman.wikia.com/wiki/Spider-Man_Wiki">Spiderman Wiki</a>
         <a href="aboutme.html">About me</a>
         <a href="quis.html">Spidey Quiz</a>
+        <a href="registration.html">Join our Spidey Community !!</a>
       </nav>
     </header>
 
     <section id="main-content">
 
-    <form name = "myquiz">
+    <form method="POST" action="index.html" onsubmit="return check()" name = "myquiz">
       Q1. What kind of animals that represent spiderman?<br>
       <input type="radio" name="q1" value="a">Insect<br>
       <input type="radio" name="q1" value="b">Mammalia<br>
@@ -39,7 +40,7 @@
       <input type="button" value="submit" onclick="check()">
 
     </form>
-    
+
     <script>
       function check(){
         var q1 = document.myquiz.q1.value
