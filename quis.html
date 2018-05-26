@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spiderman Suits</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <header>
+      <img id="logo1 " src="img/logo1.jpg" alt="Spiderman Logo1">
+      <img id="logo2" src="img/logo3.jpg" alt="Spiderman Logo2">
+      <h1>Welcome to my blog</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="http://spiderman.wikia.com/wiki/Spider-Man_Wiki">Spiderman Wiki</a>
+        <a href="aboutme.html">About me</a>
+        <a href="quis.html">Spidey Quiz</a>
+      </nav>
+    </header>
+
+    <section id="main-content">
+
+    <form name = "myquiz">
+      Q1. What kind of animals that represent spiderman?<br>
+      <input type="radio" name="q1" value="a">Insect<br>
+      <input type="radio" name="q1" value="b">Mammalia<br>
+      <input type="radio" name="q1" value="c">Bird<br><br>
+
+      Q2. Who is behind the first spiderman mask ?<br>
+      <input type="radio" name="q2" value="a">Tony Parker<br>
+      <input type="radio" name="q2" value="b">Peter Parker<br>
+      <input type="radio" name="q2" value="c">Jimmy Parker<br><br>
+
+      Q3. Wheres spiderman comic came from ?<br>
+      <input type="radio" name="q3" value="a">Uganda<br>
+      <input type="radio" name="q3" value="b">America<br>
+      <input type="radio" name="q3" value="c">Korea<br><br>
+
+      <input type="button" value="submit" onclick="check()">
+
+    </form>
+    
+    <script>
+      function check(){
+        var q1 = document.myquiz.q1.value
+        var q2 = document.myquiz.q2.value
+        var q3 = document.myquiz.q3.value
+        var count = 0
+        if(q1 === "a"){
+          count++
+        }
+        if(q2 === "b"){
+          count++
+        }
+        if(q3 === "b"){
+          count++
+        }
+        alert("you got "+count+" right answer")
+      }
+    </script>
+
+  </section>
+  </body>
+</html>
